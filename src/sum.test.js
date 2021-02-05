@@ -20,4 +20,12 @@ describe('StringCalc', () => {
         const sum = stringCalc('1,2,3')
         expect(sum).toBe(6)
     })
+    it('should evaluate "1,2 \n3" to  "6" ', () => {
+        const sum = stringCalc('1,2\n3')
+        expect(sum).toBe(6)
+    })
+    it('should evaluate "1,2,\n3" to  "6" ', () => {
+        const sum = stringCalc('1,2,\n 3')
+        expect(sum).toBe(6)
+    })
 })
