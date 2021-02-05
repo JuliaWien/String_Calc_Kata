@@ -1,0 +1,27 @@
+{
+  "name": "String_Calc_Kata",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JuliaWien/String_Calc_Kata.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JuliaWien/String_Calc_Kata/issues"
+  },
+  "homepage": "https://github.com/JuliaWien/String_Calc_Kata#readme",
+  "devDependencies": {
+    "jest": "^26.6.3"
+  },
+  "dependencies": {
+    "jquery": "^3.5.1"
+  }
+}
