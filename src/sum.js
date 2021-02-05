@@ -2,20 +2,17 @@ const { number } = require("yargs");
 
 function stringCalc(numbers) 
 {
-    let parts, number, result;
+    var parts, number, result;
 
     if (numbers == '')
         return '';
-
+        
     parts = numbers.split(',');
-    number = Number(parts[0]);
-
-    if (parts.length == 2) 
-    {
-       return Number(parts[0]) + Number(parts[1]);
+    result = 0;
+    for (i = 0; i < parts.length; ++i) {
+        number = Number(parts[i]);
+        result += number;
     }
-    
-    result = number;
     return result;
 }
 
