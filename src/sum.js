@@ -21,10 +21,15 @@ function stringCalc(numbers) {
 
             number = Number(parts[i]);
 
-            if (number < 0) {
+            if (number < 0) 
+            {
                 throw ('negatives not allowed: ' + errText);
             }
-            result += number;
+            else if (number <= 1000) 
+            { 
+                
+                    result += number;
+            }
         }
     }
     return result;

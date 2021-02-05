@@ -40,4 +40,8 @@ describe('StringCalc Function Test', () => {
             stringCalc('//;\n1;-2000;3;-3')
           }).toThrow();
     })
+    it('should ignore numbers > 1000 ', () => {
+        const sum = stringCalc('//;\n1;2000;3;4000')
+        expect(sum).toBe(4)
+    })
 })
